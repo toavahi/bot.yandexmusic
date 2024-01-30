@@ -13,9 +13,6 @@ def search(track_name):
             return best
 
 
-print(search('go robot'))
-
-
 def track_like(track_name):
     if search(track_name) != None:
         client.users_likes_tracks(search(track_name)['id'])
@@ -28,4 +25,3 @@ def track_dislike(track_name):
         print('done')
 
 
-track_dislike('wet sand')
